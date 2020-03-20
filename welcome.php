@@ -60,7 +60,7 @@
 				
 				if (isset($_SESSION['user_login']))
 				{
-				?>
+				    ?>
 					Welcome,
 				<?php
 						echo $row['username'];
