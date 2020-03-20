@@ -58,7 +58,7 @@
 	
 				$row=$select_stmt->fetch(PDO::FETCH_ASSOC);
 				
-				if(isset($_SESSION['user_login']))
+				if (isset($_SESSION['user_login']))
 				{
 				?>
 					Welcome,
