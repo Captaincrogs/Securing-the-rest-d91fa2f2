@@ -1,5 +1,5 @@
 <?php
-    include 'checkiflogedin.php';
+    require 'checkiflogedin.php';
     unset($_COOKIE['loggedInUser']);
     setcookie('loggedInUser', null, -1, '/');
 
