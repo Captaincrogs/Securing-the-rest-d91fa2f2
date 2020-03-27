@@ -1,5 +1,5 @@
 <?php
-include 'checkiflogedin.php';
+require 'checkiflogedin.php';
 function redirect($url) {
     ob_start();
     header('Location: '.$url);
