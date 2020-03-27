@@ -5,7 +5,7 @@ function redirect($url) {
         ob_end_flush();
         die();
 }
-    if (!isset($_COOKIE['loggedInUser'])){
+if (!isset($_COOKIE['loggedInUser'])){
         redirect("login.php");
         setcookie("error", "U bent niet ingelogd", time() + 36, "/");
     } else {
