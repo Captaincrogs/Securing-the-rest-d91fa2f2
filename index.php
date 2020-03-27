@@ -8,7 +8,7 @@
 
 <body>
     <?php
-    include 'checkiflogedin.php';
+    require 'checkiflogedin.php';
     function select($quary)
     {
         $host = '127.0.0.1';
