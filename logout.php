@@ -1,8 +1,7 @@
 <?php
-session_start();
+    include 'login_check.php';
+    unset($_COOKIE['loggedInUser']);
+    setcookie('loggedInUser', null, -1, '/');
 
-header("location:index.php");
-
-session_destroy();
-
+    redirect("login.php");
 ?>
