@@ -10,5 +10,5 @@ if (!isset($_COOKIE['loggedInUser'])){
         setcookie("error", "U bent niet ingelogd", time() + 36, "/");
 } else {
         echo '<form action="logout.php" method="post"><input type="submit" value="log uit"></form>';
-    }
+}
 ?>
