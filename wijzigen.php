@@ -1,5 +1,5 @@
 <?php
-include 'login_check.php';
+//include 'login_check.php';
 function redirect($url) {
     ob_start();
     header('Location: '.$url);
