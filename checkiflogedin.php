@@ -8,7 +8,7 @@ function redirect($url) {
 if (!isset($_COOKIE['loggedInUser'])){
         redirect("login.php");
         setcookie("error", "U bent niet ingelogd", time() + 36, "/");
-    } else {
+} else {
         echo '<form action="logout.php" method="post"><input type="submit" value="log uit"></form>';
     }
 ?>
