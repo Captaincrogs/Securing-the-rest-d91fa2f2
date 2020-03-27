@@ -11,10 +11,10 @@
     <?php
     function select($query)
     {
-        $host = 'localhost';
+        $host = '127.0.0.1';
         $db   = 'netland';
         $user = 'root';
-        $pass = 'HywtGBNiwu823@';
+        $pass = '';
         $charset = 'utf8mb4';
 
         $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
