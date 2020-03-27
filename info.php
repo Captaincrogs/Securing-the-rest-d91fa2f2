@@ -9,11 +9,11 @@
 <body>
     <a href="index.php">Terug</a>
     <?php
-    include 'login_check.php';
-    $host = 'localhost';
+    include 'checkiflogedin.php';
+    $host = '127.0.0.1';
     $db   = 'netland';
     $user = 'root';
-    $pass = 'HywtGBNiwu823@';
+    $pass = '';
     $charset = 'utf8mb4';
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
