@@ -73,12 +73,12 @@
                 setcookie("loggedInUser", $result[0]['id'], time() + 3600, "/");
                 redirect("index.php");
             } else {
-                setcookie("error", "Gerard de kat heeft ver gezocht, maar kon dit wachtwoord nergens vinden!", time() + 36, "/");
+                setcookie("error", "not found", time() + 36, "/");
                 redirect("login.php");
             }
             break;
         default:
-            setcookie("error", "Oops! Er is een onbekende fout opgetreden", time() + 36, "/");
+            setcookie("error", "a error occured", time() + 36, "/");
             redirect("login.php");
             break;
     }
